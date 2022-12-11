@@ -1,0 +1,11 @@
+* {
+  -webkit-scrollbar: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 139%;
+  height: 100vh;
+  object-fit: cover;
+}
