@@ -5,25 +5,48 @@ import './Header.css'
 const Header = () => {
     window.onscroll = function () {
         let windowTextPos = window.scrollY;
-        console.log(windowTextPos)
+        let opaqueEquation = windowTextPos / 10;
+        console.log("Out" + opaqueEquation)
 
-        if (windowTextPos < 200) {
+        let thisBtn = document.getElementById('btnDown');
+        if (windowTextPos < 300) {
             let thisHead = document.getElementById('thisHead');
 
             thisHead.style.transform = `translateY(-${windowTextPos}px)`;
+            thisBtn.style.transform = `translateY(${windowTextPos}%)`;
+        }
+
+        if (opaqueEquation > 0) {
+            console.log(-opaqueEquation)
+            thisBtn.style.opacity = 15 + -opaqueEquation + "%";
         }
         else {
-            null
+            thisBtn.style.opacity = '1';
         }
+
+
     }
     return (
-        <div className='linearGradient'>
-            <div className="classLinear"></div>
-            <div className="headHolder" id='thisHead'>
-                <h1 className='headHolder'>The Design You Can Fell In <br /> Love With.</h1>
+        <React.Fragment>
+            <div className="fixedNav">
+                <p>Bhavya Panchal .</p>
             </div>
-            <img src={img} />
-        </div>
+            <div className='linearGradient'>
+                <div className="classLinear"></div>
+                <div className="headHolder" id='thisHead'>
+                    <h1 className='headHolder'>The Design You Can Fell In <br /> Love With.</h1>
+                </div>
+                <img src={img} className="imgTag" />
+                <div className="btn" id='btnDown'>
+                    <button className='explore'>
+                        <span className='btnSpan'>
+                            EXPLORE MY PORTFOLIO
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+        </React.Fragment>
     )
 }
 
