@@ -22,6 +22,7 @@ const Header = () => {
         }
         else {
             thisBtn.style.opacity = '1';
+            //1
         }
 
 
