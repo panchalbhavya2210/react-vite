@@ -86,7 +86,7 @@ h1 {
   align-items: center;
   opacity: 0.8;
   mix-blend-mode: difference;
-  transition: 0.5s;
+  transition: 0.1s;
 }
 .explore {
   padding: 12px;
@@ -94,9 +94,33 @@ h1 {
   font-size: 1.3rem;
   border: none;
   border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff inset;
   background: none;
   color: #fff;
+  overflow: hidden;
+  z-index: 5;
+  transition: 0.5s;
+}
+.btnSpan {
+  position: relative;
+}
+.btnSpan::after {
+  position: absolute;
+  top: -13px;
+  left: -12px;
+  width: 110%;
+  height: 0px;
+  content: "";
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s;
+  z-index: -5;
+}
+.explore:hover .btnSpan::after {
+  height: 120px;
+  color: black;
+}
+.explore:hover {
+  color: #000;
 }
 @media only screen and (max-width: 675px) {
   .fixedNav {

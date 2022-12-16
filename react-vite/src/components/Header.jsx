@@ -6,7 +6,8 @@ const Header = () => {
     window.onscroll = function () {
         let windowTextPos = window.scrollY;
         let opaqueEquation = windowTextPos / 10;
-        console.log("Out" + opaqueEquation)
+        // console.log("Out" + opaqueEquation)
+        // console.log(windowTextPos)
 
         let thisBtn = document.getElementById('btnDown');
         if (windowTextPos < 300) {
@@ -24,8 +25,13 @@ const Header = () => {
             thisBtn.style.opacity = '1';
             //1
         }
+    }
 
-
+    function windowScroll() {
+        window.scrollTo({
+            top: 505,
+            behavior: 'smooth'
+        })
     }
     return (
         <React.Fragment>
@@ -39,7 +45,7 @@ const Header = () => {
                 </div>
                 <img src={img} className="imgTag" />
                 <div className="btn" id='btnDown'>
-                    <button className='explore'>
+                    <button className='explore' onClick={windowScroll}>
                         <span className='btnSpan'>
                             EXPLORE MY PORTFOLIO
                         </span>
