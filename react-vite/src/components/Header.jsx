@@ -6,8 +6,6 @@ const Header = () => {
     window.onscroll = function () {
         let windowTextPos = window.scrollY;
         let opaqueEquation = windowTextPos / 10;
-        // console.log("Out" + opaqueEquation)
-        // console.log(windowTextPos)
 
         let thisBtn = document.getElementById('btnDown');
         if (windowTextPos < 300) {
@@ -23,13 +21,12 @@ const Header = () => {
         }
         else {
             thisBtn.style.opacity = '1';
-            //1
         }
     }
 
     function windowScroll() {
         window.scrollTo({
-            top: 505,
+            top: 555,
             behavior: 'smooth'
         })
     }

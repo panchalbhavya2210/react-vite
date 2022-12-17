@@ -44,8 +44,9 @@ body {
   height: 100vh;
   background: linear-gradient(
     360deg,
-    rgba(0, 0, 0, 0.975) 10%,
-    rgba(0, 0, 0, 0.274) 80%
+    rgba(0, 0, 0),
+    rgba(0, 0, 0, 0.792) 10%,
+    rgba(0, 0, 0, 0.247) 80%
   );
 }
 img {
@@ -111,7 +112,7 @@ h1 {
   width: 110%;
   height: 0px;
   content: "";
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.674);
   transition: 0.5s;
   z-index: -5;
 }
@@ -120,7 +121,7 @@ h1 {
   color: black;
 }
 .explore:hover {
-  color: #000;
+  color: rgba(0, 0, 0, 0.58);
 }
 @media only screen and (max-width: 675px) {
   .fixedNav {
