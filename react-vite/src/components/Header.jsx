@@ -52,7 +52,6 @@ const Header = () => {
                             EXPLORE MY PORTFOLIO
                         </span>
                     </button>
-
                 </div>
             </div>
         </React.Fragment>
