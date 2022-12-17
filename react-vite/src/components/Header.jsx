@@ -5,7 +5,7 @@ import './Header.css'
 const Header = () => {
     window.onscroll = function () {
         let windowTextPos = window.scrollY;
-        let opaqueEquation = windowTextPos / 10;
+        let opaqueEquation = windowTextPos / 1000;
 
         let thisBtn = document.getElementById('btnDown');
         if (windowTextPos < 300) {
@@ -16,7 +16,6 @@ const Header = () => {
         }
 
         if (opaqueEquation > 0) {
-            console.log(-opaqueEquation)
             thisBtn.style.opacity = 15 + -opaqueEquation + "%";
         }
         else {
@@ -26,14 +25,20 @@ const Header = () => {
 
     function windowScroll() {
         window.scrollTo({
-            top: 555,
+            top: 605,
+            behavior: 'smooth'
+        })
+    }
+    function windowTop() {
+        window.scrollTo({
+            top: 0,
             behavior: 'smooth'
         })
     }
     return (
         <React.Fragment>
             <div className="fixedNav">
-                <p>Bhavya Panchal .</p>
+                <p onClick={windowTop}>Bhavya Panchal .</p>
             </div>
             <div className='linearGradient'>
                 <div className="classLinear"></div>
