@@ -5,7 +5,7 @@ import './Header.css'
 const Header = () => {
     window.onscroll = function () {
         let windowTextPos = window.scrollY;
-        let opaqueEquation = windowTextPos / 1000;
+        let opaqueEquation = windowTextPos / 10;
 
         let thisBtn = document.getElementById('btnDown');
         if (windowTextPos < 300) {
