@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Satoshi:wght@500;800&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Hanken Grotesk:wght@500;800&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 * {
@@ -71,7 +71,7 @@ img {
   width: 100%;
   position: absolute;
   color: #fff;
-  font-family: Satoshi;
+  font-family: Hanken Grotesk;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 3rem;
@@ -94,7 +94,7 @@ img {
 }
 .explore {
   padding: 12px;
-  font-family: Satoshi;
+  font-family: Hanken Grotesk;
   font-size: 1.3rem;
   border: none;
   border-top: 1px solid #fff;

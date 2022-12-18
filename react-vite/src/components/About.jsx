@@ -6,12 +6,16 @@ const About = () => {
         <div className='parentAbout'>
             <div className='aboutName'>
                 <div className="aboutTitle abt">
-                    <h1>ABOUT</h1>
-                    <h1 className='absolute'>ABOUT</h1>
+                    <h1>About</h1>&nbsp;
+                    <h1>Me</h1>
                 </div>
-                <div className="meTitle abt">
-                    <h1>ME,</h1>
-                    <h1 className='absolute'>ME,</h1>
+            </div>
+            <div className='borderGradient'>
+                <div className="borderGradientSub">
+
+                </div>
+                <div className="borderGradientSub two">
+
                 </div>
             </div>
 
