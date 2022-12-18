@@ -43,7 +43,7 @@ const Header = () => {
             <div className='linearGradient'>
                 <div className="classLinear"></div>
                 <div className="headHolder" id='thisHead'>
-                    <h1 className='headHolder'>The Design You Can Fell In <br /> Love With.</h1>
+                    <h1 className='headHolderTitle'>The Design You Can Fell In <br /> Love With.</h1>
                 </div>
                 <img src={img} className="imgTag" />
                 <div className="btn" id='btnDown'>
